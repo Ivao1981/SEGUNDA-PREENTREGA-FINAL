@@ -1,0 +1,248 @@
+.grid-aloj {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: auto;
+    background-image: url(../assets/img/nevado.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: .3125rem;
+    .sectionAlojamiento {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: black;
+        width: 100%;
+        height: 40.625rem;
+        background-image: url(../assets/img/aloja.jpeg);
+        background-size: cover;
+        justify-content: center;
+        align-content: center;
+       
+        h1 {
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #ffffff;
+            align-items: center;
+            padding-top: 3.125rem;
+            &:hover{color:chocolate}
+        }
+        p {
+
+            font: 1.25rem;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: #ffffff;
+            align-items: center;
+            padding-top: 3.125rem;
+        }
+    
+    }
+    .aloj-1{
+        width: 100%;
+        height:fit-content;
+        background-color: burlywood;
+        border-color: rgb(246, 11, 11);
+        
+       
+        .img-h1{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+          
+        }
+        .text-h1{
+            h1{
+            font-size: 20px;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;}
+            address{
+                text-align: center;
+            }
+        }
+    }
+    .aloj-2{
+        width: 100%;
+        height:fit-content;
+        background-color: burlywood;
+        border-color: rgb(246, 11, 11);
+        
+        .img-h2{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 60%;
+                object-fit: contain;
+            }
+            
+    }
+    .text-h2{
+        h1{
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;}
+        address{
+            text-align: center;
+        }
+    }
+    
+}
+.aloj-3{
+    width: 100%;
+    height:fit-content;
+    background-color: burlywood;
+    border-color: rgb(246, 11, 11);
+    
+    .img-h3{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+        }
+        
+}
+.text-h3{
+    h1{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;}
+    address{
+        text-align: center;
+    }
+}
+
+}
+.aloj-4{
+    width: 100%;
+    height:fit-content;
+    background-color: burlywood;
+    border-color: rgb(246, 11, 11);
+    
+    .img-h4{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+        }
+        
+}
+.text-h4{
+    h1{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;}
+    address{
+        text-align: center;
+    }
+}
+
+}
+.aloj-5{
+    width: 100%;
+    height:fit-content;
+    background-color: burlywood;
+    border-color: rgb(246, 11, 11);
+    
+    .img-h5{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+        }
+        
+}
+.text-h5{
+    h1{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;}
+    address{
+        text-align: center;
+    }
+}
+
+}
+.aloj-6{
+    width: 100%;
+    height:fit-content;
+    background-color: burlywood;
+    border-color: rgb(246, 11, 11);
+    
+    .img-h6{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 60%;
+            object-fit: contain;
+        }
+        
+}
+.text-h6{
+    h1{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;}
+    address{
+        text-align: center;
+    }
+}
+
+}
+   
+
+
+}
+//* grids*//
+
+.aloj-1 {
+    grid-column: 1/ 2;
+    grid-row: 2/ 3;
+}
+
+.aloj-2 {
+    grid-column: 2/ 3;
+    grid-row: 2/ 3;
+}
+
+.aloj-3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.aloj-4 {
+    grid-column: 1/ 2;
+    grid-row: 3/ 4;
+}
+
+.aloj-5 {
+    grid-column: 2/ 3;
+    grid-row: 3/ 4;
+}
+.aloj-6{
+    grid-column: 3/ 4;
+    grid-row: 3/ 4;
+}

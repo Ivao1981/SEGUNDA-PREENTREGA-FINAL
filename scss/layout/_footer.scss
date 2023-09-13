@@ -1,0 +1,42 @@
+.section-footer{
+    
+    width: 100%;
+    height: auto;
+    background-color: #2aace4;
+    overflow: hidden;
+    .foot-i{
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            
+        }
+        .foot{
+            flex: 1;
+            .titulo-foot {
+                font-size: 18px;
+                font-weight: bold;
+              
+            }
+          .direccion-foot{
+            color: #636060;
+          }  
+          .tel-foot {
+            color: #0d0c0c;
+        }
+        
+        }   
+
+    }
+    .redes-soc{
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

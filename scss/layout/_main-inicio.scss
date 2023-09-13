@@ -1,0 +1,174 @@
+
+
+.section-principal{
+
+background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/img/imagenglaciar.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 2.1875rem;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        color: $color-fuentes;
+        background-color: rgba(0, 0, 0, 0.177);
+        padding: 20px    ;
+        display: inline;
+        &:hover{color:rgb(185, 230, 89)}
+    
+    }
+    p{
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        background-color: rgba(0, 0, 0, 0.066);
+        color: $color-fuentes;
+        text-align: center;
+        margin: 60px;
+        display: flex;
+        padding-top: 1.25rem;
+        align-self: center;
+        width: 25.625rem;
+        letter-spacing: 10px;
+        &:hover{color:rgb(185, 230, 89)}
+    }
+
+} 
+
+.section-secundario{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../assets/img/fondo-glaciar.jpg);
+    background-size: cover;
+
+    .triangulo { 
+        width: 16rem;
+        height: 118rem;
+        background-image: url(../assets/img/triangulo1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: .375rem;
+         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2.5rem;
+        border-style: none;
+        align-self: center;
+    }
+    .sectionCardsInfo1 {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        align-self: center;
+        .cardsInfo{
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            padding: 5px 5px 5px 5px;
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 4px;
+            margin: .625rem;
+             button {
+                width: 100%;
+                height: 100%;
+                background-image: url(../assets/img/minigla.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                color: rgb(1, 1, 1);
+                font-size: .9375rem;
+                font-weight: bold;
+                font-style: oblique;
+                padding: .625rem;
+                text-decoration: underline;
+                text-decoration-style: double;
+                text-decoration-color: crimson;
+                &:hover{color:rgb(239, 23, 23)}
+            
+            }
+        }
+        
+    
+    
+            
+        
+    }
+    .div-ips{
+        width: 25rem;
+        height: 110px;
+        background-color: rgba(3, 2, 2, 0);
+        padding: .3125rem;
+        border-color: #1469aa08;
+        border-width: .25rem;
+        border-style: none;
+        align-self: center;
+        p{
+            font-size: 15px;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(0, 0, 0, 0.147);
+            color: $color-fuentes;
+            text-align: center;
+            margin: -10px;
+            display: flex;
+            padding-top: 1.25rem;
+            align-self: center;
+            letter-spacing: 10px;
+            &:hover{color:rgb(226, 21, 21)}
+        }
+    }
+    .sectionCardsInfo2{
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        align-self: center;
+        .cardsInfo2 {
+            width: 250px;
+            height: 250px;
+            background-color: gray;
+            padding: 5px 5px 5px 5px;
+            border-color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 4px;
+            margin: 10px;
+            button {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-image: url(../assets/img/minigla.png);
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                color: rgb(0, 0, 0);
+                text-decoration: underline;
+                text-decoration-style: double;
+                text-decoration-color: crimson;
+                font-size: .9375rem;
+                font-weight: bold;
+                font-style: oblique;
+                padding: .625rem;
+                &:hover{color:rgb(240, 11, 11)}
+ 
+            
+            }
+        
+        }
+          
+    }
+    }
+
+
+
+
+
+
