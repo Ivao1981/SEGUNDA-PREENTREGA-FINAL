@@ -3,10 +3,113 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      
+        ul{
+            flex-direction: column;
+        }
+         
     }
-    nav{
-        flex-direction: column;
+    
+ /** Alojamiento**/  
+
+ .grid-aloj {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 6, auto);
+}
+
+
+
+.aloj-2{
+grid-column: 1/ 2;
+grid-row: 2/ 3;
+}
+
+.aloj-1 {
+grid-column: 1/ 2;
+grid-row: 3/ 4;
+}
+
+.aloj-3 {
+grid-column: 1/ 2;
+grid-row: 4/ 5;
+}
+
+.aloj-4 {
+grid-column: 1/ 2;
+grid-row: 5/ 6;
+}
+.aloj-5 {
+    grid-column: 1/ 2;
+    grid-row: 6/ 7;
+}
+.aloj-6{
+    grid-column: 1/ 2;
+    grid-row: 7/ 8;
+}
+
+/**BaresyResto**/
+.grid-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 6, auto);
+   
+}
+
+
+.cafe1{
+    grid-column: 1/ 2;
+    grid-row: 2/ 3;
     }
+    
+    .cafe2 {
+    grid-column: 1/ 2;
+    grid-row: 3/ 4;
+    }
+    
+    .cafe3 {
+    grid-column: 1/ 2;
+    grid-row: 4/ 5;
+    }
+    
+    .cafe4{
+    grid-column: 1/ 2;
+    grid-row: 5/ 6;
+    }
+    .cafe5 {
+        grid-column: 1/ 2;
+        grid-row: 6/ 7;
+    }
+    .cafe6{
+        grid-column: 1/ 2;
+        grid-row: 7/ 8;
+    }
+
+/**Actividades**/
+
+.grid-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 4, auto);
+}
+
+
+
+.activ-1 {
+grid-column: 1/ 2;
+grid-row: 2/ 3;
+}
+
+.activ-2 {
+grid-column: 1/ 2;
+grid-row: 3/ 4;
+}
+
+.activ-3 {
+grid-column: 1/ 2;
+grid-row: 4/ 5;
+}
+
+.activ-4 {
+grid-column: 1/ 2;
+grid-row: 5/ 6;
+}
+
 
 }

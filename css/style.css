@@ -6,8 +6,19 @@
 header {
   background-color: #2aace4;
   display: flex;
+  flex-direction: row;
+  flex-wrap: none;
   justify-content: space-between;
   align-items: center; }
+  header div img {
+    position: relative;
+    animation: logo 5s; }
+
+@keyframes logo {
+  from {
+    left: 0px; }
+  to {
+    left: 200px; } }
   header nav ul {
     display: flex;
     text-decoration: underline;
@@ -17,7 +28,7 @@ header {
     header nav ul li {
       list-style: none; }
       header nav ul li a {
-        font-size: 1.25rem;
+        font: 1.25rem;
         color: #ffffff;
         text-decoration: underline; }
         header nav ul li a:hover {
@@ -214,10 +225,10 @@ header {
     height: fit-content;
     background-color: burlywood;
     border-color: #f60b0b; }
-    .grid-aloj .aloj-1 .img-h1 {
+    .grid-aloj .aloj-1 .img-h1, .grid-aloj .aloj-1 .aloj-2 .img-h2, .grid-aloj .aloj-2 .aloj-1 .img-h2 {
       width: 100%;
       height: 100%; }
-      .grid-aloj .aloj-1 .img-h1 img {
+      .grid-aloj .aloj-1 .img-h1 img, .grid-aloj .aloj-1 .aloj-2 .img-h2 img, .grid-aloj .aloj-2 .aloj-1 .img-h2 img {
         width: 100%;
         height: 100%;
         object-fit: contain; }
@@ -233,13 +244,10 @@ header {
     height: fit-content;
     background-color: burlywood;
     border-color: #f60b0b; }
-    .grid-aloj .aloj-2 .img-h2 {
+    .grid-aloj .aloj-2 .img-h2 img {
       width: 100%;
-      height: 100%; }
-      .grid-aloj .aloj-2 .img-h2 img {
-        width: 100%;
-        height: 60%;
-        object-fit: contain; }
+      height: 100%;
+      object-fit: contain; }
     .grid-aloj .aloj-2 .text-h2 h1 {
       font-size: 20px;
       font-family: 'Playfair Display', serif;
@@ -257,7 +265,7 @@ header {
       height: 100%; }
       .grid-aloj .aloj-3 .img-h3 img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         object-fit: contain; }
     .grid-aloj .aloj-3 .text-h3 h1 {
       font-size: 20px;
@@ -276,7 +284,7 @@ header {
       height: 100%; }
       .grid-aloj .aloj-4 .img-h4 img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         object-fit: contain; }
     .grid-aloj .aloj-4 .text-h4 h1 {
       font-size: 20px;
@@ -295,7 +303,7 @@ header {
       height: 100%; }
       .grid-aloj .aloj-5 .img-h5 img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         object-fit: contain; }
     .grid-aloj .aloj-5 .text-h5 h1 {
       font-size: 20px;
@@ -314,7 +322,7 @@ header {
       height: 100%; }
       .grid-aloj .aloj-6 .img-h6 img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         object-fit: contain; }
     .grid-aloj .aloj-6 .text-h6 h1 {
       font-size: 20px;
@@ -373,7 +381,8 @@ header {
     background-size: cover;
     justify-content: center;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    padding-top: 2.5rem; }
     .grid-2 .card-resto h1 {
       width: 15.625rem;
       background-color: #f5b985;
@@ -515,13 +524,13 @@ header {
   height: fit-content;
   border-color: black;
   background-color: burlywood; }
-  .cafe1 .c-1 {
+  .cafe1 .c-1, .cafe1 .cafe2 .c-2, .cafe2 .cafe1 .c-2 {
     width: 100%;
     height: 100%;
     object-fit: contain; }
-    .cafe1 .c-1 img {
+    .cafe1 .c-1 img, .cafe1 .cafe2 .c-2 img, .cafe2 .cafe1 .c-2 img {
       width: 100%;
-      height: 70%;
+      height: 100%;
       object-fit: contain; }
   .cafe1 .ctext-1 h1 {
     font-size: 20px;
@@ -536,14 +545,10 @@ header {
   height: fit-content;
   border-color: black;
   background-color: burlywood; }
-  .cafe2 .c-2 {
+  .cafe2 .c-2 img {
     width: 100%;
     height: 100%;
-    object-fit: contain; }
-    .cafe2 .c-2 img {
-      width: 100%;
-      height: 70%;
-      object-fit: cover; }
+    object-fit: cover; }
   .cafe2 .ctext-2 h1 {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
@@ -730,5 +735,264 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  nav {
-    flex-direction: column; } }
+    header ul {
+      flex-direction: column; }
+  /** Alojamiento**/
+  .grid-aloj {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); }
+  .aloj-2 {
+    grid-column: 1/ 2;
+    grid-row: 2/ 3; }
+  .aloj-1 {
+    grid-column: 1/ 2;
+    grid-row: 3/ 4; }
+  .aloj-3 {
+    grid-column: 1/ 2;
+    grid-row: 4/ 5; }
+  .aloj-4 {
+    grid-column: 1/ 2;
+    grid-row: 5/ 6; }
+  .aloj-5 {
+    grid-column: 1/ 2;
+    grid-row: 6/ 7; }
+  .aloj-6 {
+    grid-column: 1/ 2;
+    grid-row: 7/ 8; }
+  /**BaresyResto**/
+  .grid-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); }
+  .cafe1 {
+    grid-column: 1/ 2;
+    grid-row: 2/ 3; }
+  .cafe2 {
+    grid-column: 1/ 2;
+    grid-row: 3/ 4; }
+  .cafe3 {
+    grid-column: 1/ 2;
+    grid-row: 4/ 5; }
+  .cafe4 {
+    grid-column: 1/ 2;
+    grid-row: 5/ 6; }
+  .cafe5 {
+    grid-column: 1/ 2;
+    grid-row: 6/ 7; }
+  .cafe6 {
+    grid-column: 1/ 2;
+    grid-row: 7/ 8; }
+  /**Actividades**/
+  .grid-3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto); }
+  .activ-1 {
+    grid-column: 1/ 2;
+    grid-row: 2/ 3; }
+  .activ-2 {
+    grid-column: 1/ 2;
+    grid-row: 3/ 4; }
+  .activ-3 {
+    grid-column: 1/ 2;
+    grid-row: 4/ 5; }
+  .activ-4 {
+    grid-column: 1/ 2;
+    grid-row: 5/ 6; } }
+
+.cafe1 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe1 .c-1, .cafe1 .cafe2 .c-2, .cafe2 .cafe1 .c-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .cafe1 .c-1 img, .cafe1 .cafe2 .c-2 img, .cafe2 .cafe1 .c-2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .cafe1 .ctext-1 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe1 .ctext-1 address {
+    text-align: center; }
+
+.cafe2 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe2 .c-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .cafe2 .ctext-2 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe2 .ctext-2 address {
+    text-align: center; }
+
+.cafe3 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe3 .c-3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .cafe3 .c-3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .cafe3 .ctext-3 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe3 .ctext-3 address {
+    text-align: center; }
+
+.cafe4 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe4 .c-4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .cafe4 .c-4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .cafe4 .ctext-4 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe4 .ctext-4 address {
+    text-align: center; }
+
+.cafe5 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe5 .c-5 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .cafe5 .c-5 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .cafe5 .ctext-5 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe5 .ctext-5 address {
+    text-align: center; }
+
+.cafe6 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .cafe6 .c-6 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .cafe6 .c-6 img {
+      width: 100%;
+      height: 70%;
+      object-fit: contain; }
+  .cafe6 .ctext-6 h1 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+  .cafe6 .ctext-6 address {
+    text-align: center; }
+
+/**Actividades**/
+.activ-1 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .activ-1 .img-act1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .activ-1 .img-act1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .activ-1 h2 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+
+.activ-2 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .activ-2 .img-act2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .activ-2 .img-act2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .activ-2 h2 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+
+.activ-3 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .activ-3 .img-act3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .activ-3 .img-act3 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .activ-3 h2 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }
+
+.activ-4 {
+  width: 100%;
+  height: fit-content;
+  border-color: black;
+  background-color: burlywood; }
+  .activ-4 .img-act4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+    .activ-4 .img-act4 img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .activ-4 h2 {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; }

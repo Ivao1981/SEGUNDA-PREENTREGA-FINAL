@@ -5,3 +5,7 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin letra($font-size,$color){
+    font: $font-size;
+    color: $color;
+}
