@@ -4,7 +4,7 @@
 
 background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-image: url(../assets/img/imagenglaciar.jpg);
     background-size: cover;
     display: flex;
@@ -12,72 +12,66 @@ background-color: black;
     justify-content: center;
     align-items: center;
     h1{
+        text-align: center;
+        align-items: center;
         font-size: 2.1875rem;
         font-family: 'Playfair Display', serif;
         font-family: 'Roboto', sans-serif;
         color: $color-fuentes;
-        background-color: rgba(0, 0, 0, 0.177);
-        padding: 20px    ;
-        display: inline;
-        &:hover{color:rgb(185, 230, 89)}
+        background-color: rgba(0, 0, 0, 0);
+        padding: 20px;  
+        &:hover{color:rgb(237, 10, 10)}
     
     }
     p{
         font-size: 20px;
         font-family: 'Playfair Display', serif;
         font-family: 'Roboto', sans-serif;
-        background-color: rgba(0, 0, 0, 0.066);
+        backdrop-filter: blur(10px);
         color: $color-fuentes;
-        text-align: center;
-        margin: 60px;
-        display: flex;
-        padding-top: 1.25rem;
-        align-self: center;
+        padding: 20px;
+        margin-top: .625rem;  
         width: 25.625rem;
-        letter-spacing: 10px;
-        &:hover{color:rgb(185, 230, 89)}
+        letter-spacing: 10 px;
+        &:hover{color:rgb(239, 6, 6)}
     }
 
 } 
 
 .section-secundario{
     width: 100%;
-    height: 100vh;
+    height: 650px;
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     background-image: url(../assets/img/fondo-glaciar.jpg);
     background-size: cover;
 
     .triangulo { 
         width: 16rem;
-        height: 118rem;
+        height: 19rem ;
         background-image: url(../assets/img/triangulo1.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: .375rem;
-         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2.5rem;
+        background-size: contain; 
+        margin: 10px; 
         border-style: none;
         align-self: center;
     }
     .sectionCardsInfo1 {
         display: flex;
         flex-direction: column;
-        gap: 1.875rem;
         align-self: center;
         .cardsInfo{
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             background-color: gray;
             padding: 5px 5px 5px 5px;
             border-color: white;
             border-width: 2px;
             border-style: solid;
             border-radius: 4px;
-            margin: .625rem;
+       
              button {
                 width: 100%;
                 height: 100%;
@@ -104,24 +98,21 @@ background-color: black;
         
     }
     .div-ips{
-        width: 25rem;
-        height: 110px;
-        background-color: rgba(3, 2, 2, 0);
+        width: 30rem;
+        height: 160px;
         padding: .3125rem;
-        border-color: #1469aa08;
-        border-width: .25rem;
-        border-style: none;
         align-self: center;
+        align-content: center;
+        
+       
+        
         p{
             font-size: 15px;
             font-family: 'Playfair Display', serif;
             font-family: 'Roboto', sans-serif;
-            background-color: rgba(0, 0, 0, 0.147);
-            color: $color-fuentes;
+            backdrop-filter: blur(10px);
+            color:black;
             text-align: center;
-            margin: -10px;
-            display: flex;
-            padding-top: 1.25rem;
             align-self: center;
             letter-spacing: 10px;
             &:hover{color:rgb(226, 21, 21)}
@@ -130,18 +121,17 @@ background-color: black;
     .sectionCardsInfo2{
         display: flex;
         flex-direction: column;
-        gap: 1.875rem;
         align-self: center;
         .cardsInfo2 {
-            width: 250px;
-            height: 250px;
+            width: 200px;
+            height: 200px;
             background-color: gray;
             padding: 5px 5px 5px 5px;
             border-color: white;
             border-width: 2px;
             border-style: solid;
             border-radius: 4px;
-            margin: 10px;
+           
             button {
                 width: 100%;
                 height: 100%;

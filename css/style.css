@@ -37,7 +37,7 @@ header {
 .section-principal {
   background-color: black;
   width: 100%;
-  height: 100vh;
+  height: 600px;
   background-image: url(../assets/img/imagenglaciar.jpg);
   background-size: cover;
   display: flex;
@@ -45,67 +45,60 @@ header {
   justify-content: center;
   align-items: center; }
   .section-principal h1 {
+    text-align: center;
+    align-items: center;
     font-size: 2.1875rem;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.177);
-    padding: 20px;
-    display: inline; }
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px; }
     .section-principal h1:hover {
-      color: #b9e659; }
+      color: #ed0a0a; }
   .section-principal p {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
-    background-color: rgba(0, 0, 0, 0.066);
+    backdrop-filter: blur(10px);
     color: #ffffff;
-    text-align: center;
-    margin: 60px;
-    display: flex;
-    padding-top: 1.25rem;
-    align-self: center;
+    padding: 20px;
+    margin-top: .625rem;
     width: 25.625rem;
-    letter-spacing: 10px; }
+    letter-spacing: 10 px; }
     .section-principal p:hover {
-      color: #b9e659; }
+      color: #ef0606; }
 
 .section-secundario {
   width: 100%;
-  height: 100vh;
+  height: 650px;
   background-color: black;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-image: url(../assets/img/fondo-glaciar.jpg);
   background-size: cover; }
   .section-secundario .triangulo {
     width: 16rem;
-    height: 118rem;
+    height: 19rem;
     background-image: url(../assets/img/triangulo1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: .375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2.5rem;
+    margin: 10px;
     border-style: none;
     align-self: center; }
   .section-secundario .sectionCardsInfo1 {
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
     align-self: center; }
     .section-secundario .sectionCardsInfo1 .cardsInfo {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       background-color: gray;
       padding: 5px 5px 5px 5px;
       border-color: white;
       border-width: 2px;
       border-style: solid;
-      border-radius: 4px;
-      margin: .625rem; }
+      border-radius: 4px; }
       .section-secundario .sectionCardsInfo1 .cardsInfo button {
         width: 100%;
         height: 100%;
@@ -124,24 +117,18 @@ header {
         .section-secundario .sectionCardsInfo1 .cardsInfo button:hover {
           color: #ef1717; }
   .section-secundario .div-ips {
-    width: 25rem;
-    height: 110px;
-    background-color: rgba(3, 2, 2, 0);
+    width: 30rem;
+    height: 160px;
     padding: .3125rem;
-    border-color: #1469aa08;
-    border-width: .25rem;
-    border-style: none;
-    align-self: center; }
+    align-self: center;
+    align-content: center; }
     .section-secundario .div-ips p {
       font-size: 15px;
       font-family: 'Playfair Display', serif;
       font-family: 'Roboto', sans-serif;
-      background-color: rgba(0, 0, 0, 0.147);
-      color: #ffffff;
+      backdrop-filter: blur(10px);
+      color: black;
       text-align: center;
-      margin: -10px;
-      display: flex;
-      padding-top: 1.25rem;
       align-self: center;
       letter-spacing: 10px; }
       .section-secundario .div-ips p:hover {
@@ -149,18 +136,16 @@ header {
   .section-secundario .sectionCardsInfo2 {
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
     align-self: center; }
     .section-secundario .sectionCardsInfo2 .cardsInfo2 {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       background-color: gray;
       padding: 5px 5px 5px 5px;
       border-color: white;
       border-width: 2px;
       border-style: solid;
-      border-radius: 4px;
-      margin: 10px; }
+      border-radius: 4px; }
       .section-secundario .sectionCardsInfo2 .cardsInfo2 button {
         width: 100%;
         height: 100%;
@@ -197,8 +182,10 @@ header {
     grid-row-end: 2;
     background-color: black;
     width: 100%;
-    height: 40.625rem;
-    background-image: url(../assets/img/aloja.jpeg);
+    height: 37.5rem;
+    background-image: url(../../assets/img/aloja.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     align-content: center; }
@@ -730,6 +717,17 @@ header {
     align-items: center;
     justify-content: center; } }
 
+/**Index**/
+@media (max-width: 768px) {
+  .section-secundario {
+    height: 100%;
+    flex-direction: column;
+    min-height: 700px;
+    margin-top: 10px; }
+    .section-secundario .triangulo {
+      width: 14rem;
+      height: 17rem; } }
+
 @media (max-width: 425px) {
   header {
     flex-direction: column;
@@ -737,6 +735,21 @@ header {
     align-items: center; }
     header ul {
       flex-direction: column; }
+  /**Index**/ }
+
+@media (max-width: 425px) and (max-width: 425px) {
+  .section-secundario {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; }
+    .section-secundario .triangulo {
+      width: 10rem;
+      height: 14rem; }
+    .section-secundario .div-ips {
+      width: 25rem;
+      height: 110px; }
+      .section-secundario .div-ips p {
+        font-size: 10px; }
   /** Alojamiento**/
   .grid-aloj {
     grid-template-columns: 1fr;

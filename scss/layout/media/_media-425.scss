@@ -8,6 +8,33 @@
         }
          
     }
+
+/**Index**/
+
+@media (max-width: (425px)) {
+    .section-secundario{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;  
+        .triangulo{
+            width: 10rem;
+            height: 14rem;
+        }
+       
+        .div-ips{
+            width: 25rem;
+            height: 110px;
+
+         p{
+            font-size: 10px;
+
+        } 
+      
+}
+  
+    
+}
+
     
  /** Alojamiento**/  
 
@@ -112,4 +139,5 @@ grid-row: 5/ 6;
 }
 
 
+}
 }

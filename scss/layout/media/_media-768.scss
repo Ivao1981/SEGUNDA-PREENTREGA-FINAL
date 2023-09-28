@@ -10,3 +10,21 @@
     }
 
 }
+
+/**Index**/
+
+@media (max-width: (768px)) {
+    .section-secundario {
+        height: 100%;
+        flex-direction: column;
+        min-height: 700px;
+        margin-top: 10px;
+
+        .triangulo {
+            width: 14rem;
+            height: 17rem;
+        }
+
+    }
+
+}
